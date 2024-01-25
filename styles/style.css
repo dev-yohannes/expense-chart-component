@@ -11,6 +11,7 @@
   padding: 0;
   font: inherit;
   transition: all 0.2s;
+  font-family: var(--dm-sans);
 }
 
 /* Set core root defaults */
@@ -69,4 +70,150 @@ img {
   --cream: hsl(27, 66%, 92%);
   --very-pale-orgnge: hsl(33, 100%, 98%);
   --dm-sans: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: var(--very-pale-orgnge);
+  background-color: var(--cream);
+}
+
+.div-container {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.div-container .top-sec {
+  background-color: var(--soft-red);
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 10px;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.div-container .top-sec .left p:nth-of-type(1) {
+  font-size: 15px;
+  color: rgb(241, 240, 240);
+  font-weight: 400;
+}
+.div-container .top-sec .left p:nth-of-type(2) {
+  font-size: 24px;
+  font-weight: 700;
+}
+.div-container .bottom-sec {
+  background-color: var(--very-pale-orgnge);
+  border-radius: 10px;
+  width: 100%;
+}
+.div-container .bottom-sec * {
+  width: 90%;
+  margin: 0 auto;
+}
+.div-container .bottom-sec h3 {
+  text-align: center;
+  color: var(--dark-brown);
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+.div-container .bottom-sec .bars {
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(7, 1fr);
+}
+.div-container .bottom-sec .bars .mon div,
+.div-container .bottom-sec .bars .tue div,
+.div-container .bottom-sec .bars .wed div,
+.div-container .bottom-sec .bars .thu div,
+.div-container .bottom-sec .bars .fri div,
+.div-container .bottom-sec .bars .sat div,
+.div-container .bottom-sec .bars .sun div {
+  border-radius: 5px;
+}
+.div-container .bottom-sec .bars .mon p,
+.div-container .bottom-sec .bars .tue p,
+.div-container .bottom-sec .bars .wed p,
+.div-container .bottom-sec .bars .thu p,
+.div-container .bottom-sec .bars .fri p,
+.div-container .bottom-sec .bars .sat p,
+.div-container .bottom-sec .bars .sun p {
+  text-align: center;
+  color: rgb(179, 174, 174);
+  font-size: 12px;
+}
+.div-container .bottom-sec .bars .mon div,
+.div-container .bottom-sec .bars .tue div,
+.div-container .bottom-sec .bars .thu div,
+.div-container .bottom-sec .bars .fri div,
+.div-container .bottom-sec .bars .sat div,
+.div-container .bottom-sec .bars .sun div {
+  background-color: var(--soft-red);
+  width: 35px;
+}
+.div-container .bottom-sec .bars .mon div {
+  height: 40px;
+}
+.div-container .bottom-sec .bars .tue div {
+  height: 90px;
+}
+.div-container .bottom-sec .bars .wed div {
+  height: 150px;
+  width: 35px;
+  background-color: var(--cyan);
+}
+.div-container .bottom-sec .bars .thu div {
+  height: 80px;
+}
+.div-container .bottom-sec .bars .fri div {
+  height: 60px;
+}
+.div-container .bottom-sec .bars .sat div {
+  height: 130px;
+}
+.div-container .bottom-sec .bars .sun div {
+  height: 70px;
+}
+.div-container .bottom-sec hr {
+  margin: 20px auto;
+}
+.div-container .bottom-sec .total-sec {
+  margin-bottom: 40px;
+}
+.div-container .bottom-sec .total-sec .total-text {
+  font-size: 15px;
+  color: var(--medium-brown);
+}
+.div-container .bottom-sec .total-sec .total {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.div-container .bottom-sec .total-sec .total p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.div-container .bottom-sec .total-sec .total p:nth-of-type(1) {
+  margin-left: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-brown);
+}
+.div-container .bottom-sec .total-sec .total p:nth-of-type(2) {
+  margin-right: 0;
+  color: var(--dark-brown);
+  font-weight: 700;
+}
+.div-container .bottom-sec .total-sec p:nth-of-type(2) {
+  text-align: right;
+  font-size: 15px;
+  color: var(--medium-brown);
+  margin-top: -20px;
 }/*# sourceMappingURL=style.css.map */
