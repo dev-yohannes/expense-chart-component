@@ -8,7 +8,7 @@ moneySpan.forEach((money) => {
 bars.forEach((bar) => {
   bar.addEventListener("click", () => {
     moneySpan.forEach((money, e) => {
-      //   money.classList.toggle("money-display");
+      money.classList.toggle("money-display");
       console.log(e.targe);
     });
   });
