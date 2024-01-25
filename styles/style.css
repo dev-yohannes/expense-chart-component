@@ -130,6 +130,19 @@ body {
   align-items: end;
   grid-template-columns: repeat(7, 1fr);
 }
+.div-container .bottom-sec .bars .mon .money-value,
+.div-container .bottom-sec .bars .tue .money-value,
+.div-container .bottom-sec .bars .wed .money-value,
+.div-container .bottom-sec .bars .thu .money-value,
+.div-container .bottom-sec .bars .fri .money-value,
+.div-container .bottom-sec .bars .sat .money-value,
+.div-container .bottom-sec .bars .sun .money-value {
+  padding: 5px 5px;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
 .div-container .bottom-sec .bars .mon div,
 .div-container .bottom-sec .bars .tue div,
 .div-container .bottom-sec .bars .wed div,
@@ -137,6 +150,7 @@ body {
 .div-container .bottom-sec .bars .fri div,
 .div-container .bottom-sec .bars .sat div,
 .div-container .bottom-sec .bars .sun div {
+  margin-top: 10px;
   border-radius: 5px;
 }
 .div-container .bottom-sec .bars .mon p,
@@ -217,4 +231,8 @@ body {
   font-size: 15px;
   color: var(--medium-brown);
   margin-top: -20px;
+}
+
+.money-display {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
