@@ -84,7 +84,16 @@ body {
       .fri,
       .sat,
       .sun {
+        .money-value {
+          padding: 5px 5px;
+          background-color: var(--dark-brown);
+          border-radius: 5px;
+          color: white;
+          font-weight: 700;
+        }
+
         div {
+          margin-top: 10px;
           border-radius: 5px;
         }
 
@@ -195,4 +204,8 @@ body {
       }
     }
   }
+}
+
+.money-display {
+  display: none;
 }
